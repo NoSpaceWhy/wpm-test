@@ -1,5 +1,6 @@
 import pygame
 import title
+import game
 pygame.init()
 
 
@@ -18,9 +19,8 @@ while True:
             exit()
     screen.fill((255, 255, 255))
     
-    title.draw_text(screen, "Wpm test", 100, (91, 79, 79), screen_width - 350, screen_height // 8)# this is the title
-    title.draw_button(screen, "Start", 50, (0, 128, 0), screen_width - 425, screen_height // 5, 200, 100)# this is the start button    
+    title.title_run(screen, screen_width, screen_height)
     
-    
+    game.game_run(screen, screen_width, screen_height)
     pygame.display.flip()    
     clock.tick(60)
