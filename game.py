@@ -26,7 +26,7 @@ def keyboard():
     text_size = 50
     
     keys = []
-    
+    # what the helll is this
     for row_index, row in enumerate(keyboard_layout):
         for col_index, letter in enumerate(row):
             x = start_x + col_index * (key_width + key_spacing) + (row_index * (key_width // 2))
