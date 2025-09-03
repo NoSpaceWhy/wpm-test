@@ -37,7 +37,7 @@ def title_run(screen, screen_width, screen_height):
         if pygame.mouse.get_pressed()[0]:
             game_start = True
             print("start")
-
+        return 
     
     if game_mode.collidepoint(mos_pos):
         if pygame.mouse.get_pressed()[0]:

@@ -19,8 +19,6 @@ while True:
             exit()
     screen.fill((255, 255, 255))
     
-    title.title_run(screen, screen_width, screen_height)
-    
     game.game_run(screen, screen_width, screen_height)
     pygame.display.flip()    
     clock.tick(60)
